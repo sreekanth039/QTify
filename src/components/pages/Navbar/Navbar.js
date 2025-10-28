@@ -31,11 +31,7 @@ function Navbar() {
 
         <div className={styles.right} onClick={handleModalOpen}>
 
-          <Button
-            text="Give Feedback"
-           // variant="contained"
-            sx={{ mt: 0, background: "#060a07ff", padding: "5px 25px", }}
-          />
+          <Button>Give Feedback</Button>
         </div>
       </nav>
 
