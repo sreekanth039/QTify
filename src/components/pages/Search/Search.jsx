@@ -78,7 +78,7 @@ function Search() {
       <div className={styles.searchWrapper}>
         <TextField
           fullWidth
-          placeholder="Search songs..."
+          placeholder= "Search a song of your choice"
           value={query}
           onChange={handleChange}
           onFocus={() => query && setOpen(true)}
