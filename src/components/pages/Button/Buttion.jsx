@@ -4,7 +4,7 @@ import { Button as MUIButton } from "@mui/material";
 const Button = ({
   text,
   onClick,
-  //variant = "contained",
+  variant = "contained",
   // color = "primary",
   size = "medium",
   sx = {},
@@ -14,7 +14,7 @@ const Button = ({
 }) => {
   return (
     <MUIButton
-      //variant={variant}
+      variant={variant}
       // color={color}
       size={size}
       onClick={onClick}
