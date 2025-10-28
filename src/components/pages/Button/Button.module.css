@@ -5,7 +5,7 @@
 
 .button {
   background-color: var(--background-color);
-  color: var(--primary-color);
+  color: #34c94b;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   padding: 8px 20px;
