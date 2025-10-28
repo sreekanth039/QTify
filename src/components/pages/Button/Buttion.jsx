@@ -1,36 +1,23 @@
 import React from "react";
-import { Button as MUIButton } from "@mui/material";
+import styles from "./Button.module.css";
 
-const Button = ({
-  text,
+export default function Button({
+  children = "Give Feedback",
   onClick,
- // variant = "contained",
-  // color = "primary",
-  size = "medium",
-  sx = {},
-  disabled = false,
-  fullWidth = false,
   type = "button",
-}) => {
+  disabled = false,
+  className = "",
+  ...rest
+}) {
   return (
-    <MUIButton
-      //variant={variant}
-      // color={color}
-      size={size}
-      onClick={onClick}
-      sx={{
-        borderRadius: "8px",
-        textTransform: "none",
-        fontWeight: 600,
-        ...sx,
-      }}
-      disabled={disabled}
-      fullWidth={fullWidth}
+    <button
       type={type}
+      disabled={disabled}
+      onClick={onClick}
+      className={`${styles.button} ${className}`}
+      {...rest}
     >
-      {text}
-    </MUIButton>
+      {children}
+    </button>
   );
-};
-
-export default Button;
+}
