@@ -33,7 +33,7 @@ function Navbar() {
 
           <Button
             text="Give Feedback"
-            variant="contained"
+           // variant="contained"
             sx={{ mt: 0, background: "#060a07ff", padding: "5px 25px", }}
           />
         </div>
